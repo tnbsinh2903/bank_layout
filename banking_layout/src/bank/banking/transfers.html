@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transfers</title>
+    <script src="../bootstrap/jquery/jquery-3.6.0.min.js"></script>
+    <script src="../bootstrap/jquery/jquery.validate-1.19.3.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+<div class="container">
+    <div class="table-title">
+        <div class="row">
+            <div class="col-sm-8">
+                <h1>Transfer Money Information</h1>
+            </div>
+            <div class="col-sm-4">
+                <a href="index.html" class="btn btn-outline-light float-right">
+                    <i class="fas fa-list" aria-hidden="true"></i>
+                    <span>List of Customers</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div  class="mt-4" >
+        <form method="post" novalidate="novalidate" id="myform">
+            <fieldset class="row g-3">
+                <div class="col-md-3">
+                    <label class="form-label">Sender ID</label>
+                    <input type="text" class="form-control" id="name" name="id_sed" value="">
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label">Sender Name</label>
+                    <input type="text" class="form-control error"   name="name_sed" value="" aria-invalid="true">
+                    <!--                <label id="email-error" class="error text-danger" for="email"></label>-->
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label">Email</label>
+                    <input type="text" class="form-control"   name="email" value="">
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label">Sender balance</label>
+                    <input type="text" class="form-control"   name="sed_balance" value="">
+                </div>
+                <div class="col-md-3 mt-3">
+                    <label class="form-label">Recipient Name</label>
+                    <select style="width: 300px" class="p-2" name="transfer_amo" id=""  >
+                        <option value="1075">(1075) Tarik Carson</option>
+                        <option value="1085">(1085) Athena Perkins</option>
+                        <option value="1095">(1095) Emerson Sanford</option>
+                        <option value="1105">(1105) Danielle Mendoza</option>
+                        <option value="1115">(1115) Rose Beach</option>
+                        <option value="1125">(1125) Sade Farrell</option>
+                        <option value="1135">(1135) Shellie Merrill</option>
+                        <option value="1145">(1145) Shoshana Bruce</option>
+                        <option value="1155">(1155) Akeem Walter</option>
+                        <option value="1165">(1165) Akeem Walter</option>
+                        <option value="1175">(1175) Amaya Baker</option>
+                        <option value="1185">(1185) Christian Butler</option>
+                        <option value="1195">(1195) Edan Roach</option>
+                        <option value="1215">(1215) Garth Walker</option>
+                        <option value="1235">(1235) Jenna Patterson</option>
+                        <option value="1245">(1245) Reuben Cobb</option>
+                        <option value="1255">(1255) Maite Sargent</option>
+                        <option value="1265">(1265) Vanna Cruz</option>
+                        <option value="1275">(1275) Ashton Meyers</option>
+                        <option value="1305">(1305) Thor Ball</option>
+                        <option value="1315">(1315) Rama Wheeler</option>
+                    </select>
+                    <!--                <label id="email-error" class="error text-danger" for="email"></label>-->
+                </div><div class="col-md-3  mt-3">
+                <label class="form-label">Transfer Amount ($)</label>
+                <input type="text" class="form-control error"  name="transfer_amo" value="" aria-invalid="true">
+                <!--                <label id="email-error" class="error text-danger" for="email"></label>-->
+            </div><div class="col-md-3  mt-3">
+                <label class="form-label">Fess (%)</label>
+                <input type="text" class="form-control error"  name="fess" value="" aria-invalid="true">
+                <!--                <label id="email-error" class="error text-danger" for="email"></label>-->
+            </div><div class="col-md-3  mt-3    ">
+                <label class="form-label">Total Amount Of Transaction ($)</label>
+                <input type="text" class="form-control error"   name="total" value="" aria-invalid="true">
+                <!--                <label id="email-error" class="error text-danger" for="email"></label>-->
+            </div>
+                <div class="col-md-12">
+                    <button type="submit" id="btnCreateCustomer" class="btn btn-outline-info mt-4">
+                        <i class="fas fa-exchange-alt" aria-hidden="true"></i>
+                        Transfer
+                    </button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
